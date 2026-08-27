@@ -6,11 +6,11 @@
 /*   By: leoaguia <leoaguia@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 19:59:52 by leoaguia          #+#    #+#             */
-/*   Updated: 2026/08/27 21:14:06 by leoaguia         ###   ########.fr       */
+/*   Updated: 2026/08/27 21:17:23 by leoaguia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Serializer.hpp
+// Serializer.cpp
 
 #include "Serializer.hpp"
 
