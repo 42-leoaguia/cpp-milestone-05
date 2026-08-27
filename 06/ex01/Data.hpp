@@ -1,35 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Data.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: leoaguia <leoaguia@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/27 19:58:32 by leoaguia          #+#    #+#             */
-/*   Updated: 2026/08/27 21:13:44 by leoaguia         ###   ########.fr       */
+/*   Created: 2026/08/27 20:28:09 by leoaguia          #+#    #+#             */
+/*   Updated: 2026/08/27 21:13:50 by leoaguia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// main.cpp
+// Data.hpp
 
-#include "Serializer.hpp"
-#include <iostream>
+#ifndef DATA_HPP
+# define DATA_HPP
 
-int	main()
+# include <string>
+
+struct Data
 {
-	Data	a;
+	int			id;
+	std::string	name;
+};
 
-	a.id = 1;
-	a.name = "Alpha";
-
-
-	std::cout << "id: " << a.id << "\nname: " << a.name << "\nadress: " << &a << std::endl;
-
-	uintptr_t	raw = Serializer::serialize(&a);
-	std::cout << "raw: " << raw << std::endl;
-
-	Data*	ptr = Serializer::deserialize(raw);
-	std::cout << "ptr: " << ptr << std::endl;
-
-	return (0);
-}
+#endif

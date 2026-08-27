@@ -6,23 +6,25 @@
 /*   By: leoaguia <leoaguia@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 19:59:14 by leoaguia          #+#    #+#             */
-/*   Updated: 2026/08/27 20:26:30 by leoaguia         ###   ########.fr       */
+/*   Updated: 2026/08/27 21:13:59 by leoaguia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Serializer.hpp
 
 #ifndef	SERIALIZER_HPP
 # define SERIALIZER_HPP
 
-# include <stdint.h>	// We need it to use uintptr_t on C++98
 # include "Data.hpp"
+# include <stdint.h>	// We need it to use uintptr_t on C++98
 
 class	Serializer
 {
 	private:
 		// Ortodoxal Canonical Form
 		Serializer();
-		Serializer(const Serializer& other);
-		Serializer&	operator=(const Serializer& other);
+		Serializer(const Serializer&);
+		Serializer&	operator=(const Serializer&);
 		~Serializer();
 
 	public:

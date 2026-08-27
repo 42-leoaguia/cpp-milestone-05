@@ -6,7 +6,7 @@
 /*   By: leoaguia <leoaguia@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/31 00:11:13 by leoaguia          #+#    #+#             */
-/*   Updated: 2026/08/17 20:09:34 by leoaguia         ###   ########.fr       */
+/*   Updated: 2026/08/27 20:44:50 by leoaguia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,15 @@
 enum Type {CHAR, INT, FLOAT, DOUBLE, PSEUDO, INVALID};
 
 // Orthodox Canonical Form
-// All members are private: the class must never be instantiated.
 ScalarConverter::ScalarConverter() {}
+
 ScalarConverter::ScalarConverter(const ScalarConverter&) {}
-ScalarConverter&    ScalarConverter::operator=(const ScalarConverter&) {return (*this);}
+
+ScalarConverter&    ScalarConverter::operator=(const ScalarConverter&)
+{
+    return (*this);
+}
+
 ScalarConverter::~ScalarConverter() {}
 
 // Detects what type the literal string represents
