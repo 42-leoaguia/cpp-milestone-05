@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: leoaguia <leoaguia@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/07/31 00:11:33 by leoaguia          #+#    #+#              #
-#    Updated: 2026/08/27 19:58:23 by leoaguia         ###   ########.fr        #
+#    Created: 2026/08/27 19:57:49 by leoaguia          #+#    #+#              #
+#    Updated: 2026/08/27 19:58:12 by leoaguia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Makefile
 
-NAME		=	convert
+NAME		=	serial
 
 CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
