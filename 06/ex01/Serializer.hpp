@@ -6,7 +6,7 @@
 /*   By: leoaguia <leoaguia@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 19:59:14 by leoaguia          #+#    #+#             */
-/*   Updated: 2026/08/27 21:13:59 by leoaguia         ###   ########.fr       */
+/*   Updated: 2026/08/27 21:32:14 by leoaguia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 class	Serializer
 {
 	private:
-		// Ortodoxal Canonical Form
+		// Orthodoxal Canonical Form
 		Serializer();
 		Serializer(const Serializer&);
 		Serializer&	operator=(const Serializer&);
