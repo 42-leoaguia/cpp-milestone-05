@@ -6,7 +6,7 @@
 /*   By: leoaguia <leoaguia@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 00:34:46 by leoaguia          #+#    #+#             */
-/*   Updated: 2026/08/28 01:41:38 by leoaguia         ###   ########.fr       */
+/*   Updated: 2026/08/28 01:46:47 by leoaguia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void	identify(Base& p)
 	{
 		(void)dynamic_cast<A&>(p);
 		std::cout << "A" << std::endl;
-		return ();
+		return;
 	}
 	catch (std::exception)
 	{
@@ -83,7 +83,7 @@ void	identify(Base& p)
 	{
 		(void)dynamic_cast<B&>(p);
 		std::cout << "B" << std::endl;
-		return ();
+		return;
 	}
 	catch (std::exception) {}
 
@@ -91,7 +91,7 @@ void	identify(Base& p)
 	{
 		(void)dynamic_cast<C&>(p);
 		std::cout << "C" << std::endl;
-		return ();
+		return;
 	}
 	catch (std::exception) {}
 }
