@@ -6,7 +6,7 @@
 #    By: leoaguia <leoaguia@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/08/28 00:32:33 by leoaguia          #+#    #+#              #
-#    Updated: 2026/08/28 00:34:33 by leoaguia         ###   ########.fr        #
+#    Updated: 2026/08/28 01:52:12 by leoaguia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
 
 SRCS		=	main.cpp		\
-				Serializer.cpp	\
+				Base.cpp	\
 
 OBJSDIR		=	obj/
 

@@ -6,7 +6,7 @@
 /*   By: leoaguia <leoaguia@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 00:34:46 by leoaguia          #+#    #+#             */
-/*   Updated: 2026/08/28 01:46:47 by leoaguia         ###   ########.fr       */
+/*   Updated: 2026/08/28 02:02:00 by leoaguia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,11 @@ Base*	generate(void)
 		std::cout << "Generated: C" << std::endl;
 		return (new C());
 	}
+	else
+	{
+		std::cout << "Impossible" << std::endl;
+		return (NULL);
+	}
 }
 
 // Identify using pointers (relies on NULL returns)
@@ -74,7 +79,7 @@ void	identify(Base& p)
 		std::cout << "A" << std::endl;
 		return;
 	}
-	catch (std::exception)
+	catch (std::exception& e)
 	{
 		// C++ throws std::bad_cast on reference failure
 	}
@@ -85,7 +90,7 @@ void	identify(Base& p)
 		std::cout << "B" << std::endl;
 		return;
 	}
-	catch (std::exception) {}
+	catch (std::exception& e) {}
 
 	try
 	{
@@ -93,7 +98,9 @@ void	identify(Base& p)
 		std::cout << "C" << std::endl;
 		return;
 	}
-	catch (std::exception) {}
+	catch (std::exception& e) {}
+
+	std::cout << "Unknown Type" << std::endl;
 }
 
 int	main(void)
@@ -102,22 +109,22 @@ int	main(void)
 	std::srand(static_cast<unsigned int>(std::time(NULL)));
 
 	// 2. Pointer
-	std::cout << "--- Pointer Test ---" << std::endl;
+	std::cout << "--- Pointer Test ---\n" << std::endl;
 	for (int i = 0; i < 3; i++)
 	{
-		std::cout << "I'm: ";
 		Base* instance = generate();
+		std::cout << "I'm: ";
 		identify(instance);
 		delete instance;
 		std::cout << std::endl;
 	}
 
 	// 3. Reference
-	std::cout << "--- Reference Test ---" << std::endl;
+	std::cout << "--- Reference Test ---\n" << std::endl;
 	for (int i = 0; i < 3; i++)
 	{
-		std::cout << "I'm: ";
 		Base* instance = generate();
+		std::cout << "I'm: ";
 		// Dereference the pointer, so it is passed by reference
 		identify(*instance);
 		delete (instance);
